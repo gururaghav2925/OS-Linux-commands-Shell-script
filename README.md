@@ -79,13 +79,13 @@ diff file1 file2
     --- file1
     +++ file2
     @ -1,5 +1,6 @@
-    chancal singhvi
-    anil aggarwal
-    barun sengupta
-    c.k. shukla
-    lalit chowdury
-    s.n. dasgupta
-    sumit chakrobarty
+    -chancal singhvi
+    +anil aggarwal
+    +barun sengupta
+     c.k. shukla
+    +lalit chowdury
+     s.n. dasgupta
+    -sumit chakrobarty
 
 #Filters
 
