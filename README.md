@@ -145,19 +145,21 @@ hello world
  ```
 grep Hello newfile 
 ## OUTPUT
+```
 Hello world
-
+```
 
 grep hello newfile 
 ## OUTPUT
-
+```
 hello world
-
+```
 
 grep -v hello newfile 
 ## OUTPUT
+```
 Hello world
-
+```
 
 cat newfile | grep -i "hello"
 ## OUTPUT
@@ -169,8 +171,9 @@ hello world
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
+```
 2
-
+```
 
 grep -w -n world newfile   
 ## OUTPUT
@@ -221,8 +224,9 @@ hello world
 
 egrep '(^hello)' newfile 
 ## OUTPUT
+```
 hello world
-
+```
 
 egrep '(world$)' newfile 
 ## OUTPUT
@@ -233,8 +237,9 @@ hello world
 
 egrep '(World$)' newfile 
 ## OUTPUT
+```
 Linux is best in this World
-
+```
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
 ```
@@ -245,18 +250,21 @@ Linux is best in this World
 
 egrep '[1-9]' newfile 
 ## OUTPUT
+```
 Linus is world number 1
-
+```
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
+```
 Linus is world number 1
-
+```
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
+```
 Linux is best in this World
-
+```
 egrep l{2} newfile
 ## OUTPUT
 ```
@@ -287,13 +295,15 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
+```
 1002 | tom |  5000 | Admin
-
+```
 
 sed -n -e '$p' file23
 ## OUTPUT
+```
 1001 | Ram | 10000 | HR
-
+```
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
@@ -386,8 +396,9 @@ seq 10 | sed -n '4,6p'
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
+```
 sed: no address after comma
-
+```
 
 seq 3 | sed '2a hello'
 ## OUTPUT
@@ -561,7 +572,9 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-Hello World 
+```
+Hello World
+```
 cat << stop > herecheck.txt
 ```
 hello in this world
@@ -626,16 +639,24 @@ File name is ./scriptest.sh
  ```
 ls file1
 ## OUTPUT
+```
 file1
+```
 echo $?
-## OUTPUT 
+## OUTPUT
+```
 0
+```
 echo $?
 ## OUTPUT  
-abcd 
+```
+abcd
+``` 
 echo $?
- ## OUTPUT
-1 
+## OUTPUT
+```
+1
+```
 # mis-using string comparisons
 
 cat < strcomp.sh 
@@ -678,7 +699,9 @@ val1=baseball
 chmod 755 strcomp.sh 
 ./strcomp.sh 
 ## OUTPUT
+```
 baseball is less than hockey
+```
 # check file ownership
 cat < psswdperm.sh 
 ```bash
@@ -704,7 +727,9 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+```
 You are the owner of the /etc/passwd file
+```
 # check if with file location
 cat>ifnested.sh 
 ```bash
@@ -901,7 +926,9 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+```
  The file exists and you can write to it
+```
 # using the case command
 cat >casecheck.sh 
 ```bash
@@ -1074,6 +1101,7 @@ done
 ```
 $ chmod 777 forinfile.sh
 $ cat cities
+```
 Hyderabad
 Alampur
 Basara
@@ -1081,6 +1109,7 @@ Warangal
 Adilabad
 Bhadrachalam
 Khammam
+```
 
 ## OUTPUT
 ```
@@ -1141,11 +1170,13 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
+ ```
  1 - 5
  2 - 4
  3 - 3
  4 - 2
  5 - 1
+```
 cat forbreak.sh 
 ```bash
 #!/bin/bash
